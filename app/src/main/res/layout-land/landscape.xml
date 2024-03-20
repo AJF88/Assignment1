@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Landscape mode"
+        android:textColor="@color/dark_blue"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="WELCOME"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:text="Welcome to JD Tech your gateway to the cutting-edge technology solutions and an innovation."
+    android:textColor="@android:color/black"
+    android:textSize="20sp"
+    android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_text"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/my_button"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="LOGIN"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/my_button1"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="SIGNUP"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+</RelativeLayout>
